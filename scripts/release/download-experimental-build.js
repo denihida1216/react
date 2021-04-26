@@ -17,9 +17,9 @@ const run = async () => {
   try {
     addDefaultParamValue('-r', '--releaseChannel', 'experimental');
 
-    // Default to the latest commit in master.
+    // Default to the latest commit in main.
     // If this is a reproducible build (e.g. Firefox tester) a --commit will be specified.
-    addDefaultParamValue(null, '--commit', 'master');
+    addDefaultParamValue(null, '--commit', 'main');
 
     const params = await parseParams();
     params.cwd = join(__dirname, '..', '..');

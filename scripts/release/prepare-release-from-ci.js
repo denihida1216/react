@@ -13,7 +13,7 @@ const testTracingFixture = require('./shared-commands/test-tracing-fixture');
 
 const run = async () => {
   try {
-    addDefaultParamValue(null, '--commit', 'master');
+    addDefaultParamValue(null, '--commit', 'main');
 
     const params = await parseParams();
     params.cwd = join(__dirname, '..', '..');
